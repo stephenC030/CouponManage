@@ -1,7 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3ae9bbb8-b5c8-4658-bd37-0d3ef4c25851" name="Default Changelist" comment="" />
+    <list default="true" id="3ae9bbb8-b5c8-4658-bd37-0d3ef4c25851" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imooc-coupon-service/coupon-common/coupon-common.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imooc-coupon-service/coupon-common/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imooc-coupon-service/coupon-common/src/main/java/com/imooc/coupon/advice/CommonResponseDateAdvice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imooc-coupon-service/coupon-common/src/main/java/com/imooc/coupon/advice/GlobalExceptionAdvice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imooc-coupon-service/coupon-common/src/main/java/com/imooc/coupon/annotation/IgnoreResponseAdvice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imooc-coupon-service/coupon-common/src/main/java/com/imooc/coupon/conf/JacksonConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imooc-coupon-service/coupon-common/src/main/java/com/imooc/coupon/conf/WebConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imooc-coupon-service/coupon-common/src/main/java/com/imooc/coupon/enums/CouponExceptionEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imooc-coupon-service/coupon-common/src/main/java/com/imooc/coupon/exception/CouponException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imooc-coupon-service/coupon-common/src/main/java/com/imooc/coupon/vo/CommonResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imooc-coupon-service/imooc-coupon-service.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imooc-coupon-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,9 +32,15 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="AnnotationType" />
         <option value="Class" />
+        <option value="Kotlin Enum" />
+        <option value="Enum" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
@@ -29,11 +53,16 @@
     <option name="version" value="1" />
   </component>
   <component name="ProjectId" id="1fKTKbL5MJyF58EYTtwLeripThf" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -99,11 +128,25 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1595965721432</updated>
-      <workItem from="1595965724847" duration="10922000" />
+      <workItem from="1595965724847" duration="15546000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>
