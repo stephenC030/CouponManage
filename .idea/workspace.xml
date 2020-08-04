@@ -2,22 +2,47 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3ae9bbb8-b5c8-4658-bd37-0d3ef4c25851" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imooc-coupon-service/coupon-common/coupon-common.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imooc-coupon-service/coupon-common/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imooc-coupon-service/coupon-common/src/main/java/com/imooc/coupon/advice/CommonResponseDateAdvice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imooc-coupon-service/coupon-common/src/main/java/com/imooc/coupon/advice/GlobalExceptionAdvice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imooc-coupon-service/coupon-common/src/main/java/com/imooc/coupon/annotation/IgnoreResponseAdvice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imooc-coupon-service/coupon-common/src/main/java/com/imooc/coupon/conf/JacksonConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imooc-coupon-service/coupon-common/src/main/java/com/imooc/coupon/conf/WebConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imooc-coupon-service/coupon-common/src/main/java/com/imooc/coupon/enums/CouponExceptionEnum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imooc-coupon-service/coupon-common/src/main/java/com/imooc/coupon/exception/CouponException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imooc-coupon-service/coupon-common/src/main/java/com/imooc/coupon/vo/CommonResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imooc-coupon-service/imooc-coupon-service.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imooc-coupon-service/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ron-coupon-service/coupon-common/src/main/java/com/ron/coupon/constant/CouponCategory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ron-coupon-service/coupon-common/src/main/java/com/ron/coupon/constant/DistributeTarget.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ron-coupon-service/coupon-common/src/main/java/com/ron/coupon/constant/PeriodType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ron-coupon-service/coupon-common/src/main/java/com/ron/coupon/constant/ProductLine.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ron-coupon-service/coupon-common/src/main/java/com/ron/coupon/vo/TemplateRule.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ron-coupon-service/coupon-template/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ron-coupon-service/coupon-template/src/main/java/com/ron/coupon/TemplateApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ron-coupon-service/coupon-template/src/main/java/com/ron/coupon/converter/CouponCategoryConverter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ron-coupon-service/coupon-template/src/main/java/com/ron/coupon/converter/DistributeTargetConverter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ron-coupon-service/coupon-template/src/main/java/com/ron/coupon/converter/ProductLineConverter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ron-coupon-service/coupon-template/src/main/java/com/ron/coupon/converter/RuleConverter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ron-coupon-service/coupon-template/src/main/java/com/ron/coupon/entity/CouponTemplate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ron-coupon-service/coupon-template/src/main/java/com/ron/coupon/serialization/CouponTemplateSerialize.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ron-coupon-service/coupon-template/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coupon-eureka/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/coupon-eureka/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coupon-eureka/src/main/java/com/imooc/coupon/EurekaApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/coupon-eureka/src/main/java/com/ron/coupon/EurekaApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coupon-eureka/src/main/java/com/imooc/coupon/filter/AbstractPostZuulFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/coupon-eureka/src/main/java/com/ron/coupon/filter/AbstractPostZuulFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coupon-eureka/src/main/java/com/imooc/coupon/filter/AbstractPreZuulFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/coupon-eureka/src/main/java/com/ron/coupon/filter/AbstractPreZuulFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coupon-eureka/src/main/java/com/imooc/coupon/filter/AbstractZuulFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/coupon-eureka/src/main/java/com/ron/coupon/filter/AbstractZuulFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coupon-eureka/src/main/java/com/imooc/coupon/filter/AccessLogFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/coupon-eureka/src/main/java/com/ron/coupon/filter/AccessLogFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coupon-eureka/src/main/java/com/imooc/coupon/filter/PreRequestFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/coupon-eureka/src/main/java/com/ron/coupon/filter/PreRequestFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coupon-eureka/src/main/java/com/imooc/coupon/filter/RateLimiterFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/coupon-eureka/src/main/java/com/ron/coupon/filter/RateLimiterFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coupon-eureka/src/main/java/com/imooc/coupon/filter/TokenFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/coupon-eureka/src/main/java/com/ron/coupon/filter/TokenFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coupon-gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/coupon-gateway/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coupon-gateway/src/main/java/com/imooc/coupon/ZuulGatewayApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/coupon-gateway/src/main/java/com/ron/coupon/ZuulGatewayApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/imooc-coupon-service/coupon-common/coupon-common.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/imooc-coupon-service/coupon-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ron-coupon-service/coupon-common/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/imooc-coupon-service/coupon-common/src/main/java/com/imooc/coupon/advice/CommonResponseDateAdvice.java" beforeDir="false" afterPath="$PROJECT_DIR$/ron-coupon-service/coupon-common/src/main/java/com/ron/coupon/advice/CommonResponseDateAdvice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/imooc-coupon-service/coupon-common/src/main/java/com/imooc/coupon/advice/GlobalExceptionAdvice.java" beforeDir="false" afterPath="$PROJECT_DIR$/ron-coupon-service/coupon-common/src/main/java/com/ron/coupon/advice/GlobalExceptionAdvice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/imooc-coupon-service/coupon-common/src/main/java/com/imooc/coupon/annotation/IgnoreResponseAdvice.java" beforeDir="false" afterPath="$PROJECT_DIR$/ron-coupon-service/coupon-common/src/main/java/com/ron/coupon/annotation/IgnoreResponseAdvice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/imooc-coupon-service/coupon-common/src/main/java/com/imooc/coupon/conf/JacksonConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/ron-coupon-service/coupon-common/src/main/java/com/ron/coupon/conf/JacksonConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/imooc-coupon-service/coupon-common/src/main/java/com/imooc/coupon/conf/WebConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/ron-coupon-service/coupon-common/src/main/java/com/ron/coupon/conf/WebConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/imooc-coupon-service/coupon-common/src/main/java/com/imooc/coupon/enums/CouponExceptionEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/ron-coupon-service/coupon-common/src/main/java/com/ron/coupon/enums/CouponExceptionEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/imooc-coupon-service/coupon-common/src/main/java/com/imooc/coupon/exception/CouponException.java" beforeDir="false" afterPath="$PROJECT_DIR$/ron-coupon-service/coupon-common/src/main/java/com/ron/coupon/exception/CouponException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/imooc-coupon-service/coupon-common/src/main/java/com/imooc/coupon/vo/CommonResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/ron-coupon-service/coupon-common/src/main/java/com/ron/coupon/vo/CommonResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/imooc-coupon-service/imooc-coupon-service.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/imooc-coupon-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ron-coupon-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/imooc-coupon.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -33,9 +58,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="AnnotationType" />
-        <option value="Class" />
         <option value="Kotlin Enum" />
         <option value="Enum" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -65,6 +90,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -84,7 +110,14 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.ZuulGatewayApplication">
+  <component name="RunManager" selected="Spring Boot.EurekaApplication">
+    <configuration name="EurekaApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="coupon-eureka" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ron.coupon.EurekaApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="EurekaApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="coupon-eureka" />
       <extension name="coverage">
@@ -94,6 +127,13 @@
         </pattern>
       </extension>
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.imooc.coupon.EurekaApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ZuulGatewayApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="coupon-gateway" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ron.coupon.ZuulGatewayApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -129,6 +169,7 @@
       <option name="presentableId" value="Default" />
       <updated>1595965721432</updated>
       <workItem from="1595965724847" duration="15546000" />
+      <workItem from="1596491492362" duration="8357000" />
     </task>
     <servers />
   </component>
@@ -140,7 +181,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

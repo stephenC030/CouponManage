@@ -4,17 +4,17 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.imooc.coupon</groupId>
-    <artifactId>imooc-coupon</artifactId>
+    <groupId>com.ron.coupon</groupId>
+    <artifactId>ron-coupon</artifactId>
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>coupon-eureka</module>
         <module>coupon-gateway</module>
-        <module>imooc-coupon-service</module>
+        <module>ron-coupon-service</module>
     </modules>
 
-    <name>imooc-coupon</name>
-    <description>SpringCloud Project For Imooc Coupon</description>
+    <name>ron-coupon</name>
+    <description>SpringCloud Project For Ron Coupon</description>
 
     <!-- 项目的打包类型, 即项目的发布形式, 默认为 jar. 对于聚合项目的父模块来说, 必须指定为 pom -->
     <packaging>pom</packaging>
