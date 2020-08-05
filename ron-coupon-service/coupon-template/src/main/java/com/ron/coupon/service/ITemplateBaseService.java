@@ -11,7 +11,7 @@ import java.util.Map;
 /**
  * Template basic (View, delete, ...) service definition
  */
-public interface TemplateBaseService {
+public interface ITemplateBaseService {
 
     /** Get template info with template id
      * @param id Template id
