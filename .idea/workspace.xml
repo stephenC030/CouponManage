@@ -2,10 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3ae9bbb8-b5c8-4658-bd37-0d3ef4c25851" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ron-coupon-service/coupon-template/src/main/java/com/ron/coupon/controller/CouponTemplateController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ron-coupon-service/coupon-template/src/main/java/com/ron/coupon/controller/HealthCheck.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dump.rdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ron-coupon-service/coupon-template/src/main/resources/sql/create_db.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ron-coupon-service/coupon-template/src/main/resources/sql/create_table.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ron-coupon-service/coupon-template/src/test/java/com/ron/coupon/TemplateApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ron-coupon-service/coupon-template/src/test/java/com/ron/coupon/base/TemplateBaseTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ron-coupon-service/coupon-template/src/test/java/com/ron/coupon/service/BuildTemplateTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/coupon-gateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/coupon-gateway/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ron-coupon-service/coupon-template/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ron-coupon-service/coupon-template/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -73,23 +78,90 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.EurekaApplication">
-    <configuration name="EurekaApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="coupon-eureka" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ron.coupon.EurekaApplication" />
+  <component name="RunManager" selected="JUnit.TemplateBaseTest.testFindId2TemplateSDK">
+    <configuration name="BuildTemplateTest.testBuildTemplate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="coupon-template" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ron.coupon.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ron.coupon.service" />
+      <option name="MAIN_CLASS_NAME" value="com.ron.coupon.service.BuildTemplateTest" />
+      <option name="METHOD_NAME" value="testBuildTemplate" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EurekaApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="coupon-eureka" />
+    <configuration name="TemplateApplicationTests.contextLoad" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="coupon-template" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.imooc.coupon.*" />
+          <option name="PATTERN" value="com.ron.coupon.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.imooc.coupon.EurekaApplication" />
+      <option name="PACKAGE_NAME" value="com.ron.coupon" />
+      <option name="MAIN_CLASS_NAME" value="com.ron.coupon.TemplateApplicationTests" />
+      <option name="METHOD_NAME" value="contextLoad" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TemplateBaseTest.testBuildTemplateInfo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="coupon-template" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ron.coupon.base.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ron.coupon.base" />
+      <option name="MAIN_CLASS_NAME" value="com.ron.coupon.base.TemplateBaseTest" />
+      <option name="METHOD_NAME" value="testBuildTemplateInfo" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TemplateBaseTest.testFindAllUsableTemplate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="coupon-template" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ron.coupon.base.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ron.coupon.base" />
+      <option name="MAIN_CLASS_NAME" value="com.ron.coupon.base.TemplateBaseTest" />
+      <option name="METHOD_NAME" value="testFindAllUsableTemplate" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TemplateBaseTest.testFindId2TemplateSDK" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="coupon-template" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ron.coupon.base.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ron.coupon.base" />
+      <option name="MAIN_CLASS_NAME" value="com.ron.coupon.base.TemplateBaseTest" />
+      <option name="METHOD_NAME" value="testFindId2TemplateSDK" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EurekaApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="coupon-eureka" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ron.coupon.EurekaApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -108,23 +180,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ZuulGatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="coupon-gateway" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.imooc.coupon.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.imooc.coupon.ZuulGatewayApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.ZuulGatewayApplication" />
-        <item itemvalue="Spring Boot.EurekaApplication" />
+        <item itemvalue="JUnit.TemplateBaseTest.testFindId2TemplateSDK" />
+        <item itemvalue="JUnit.TemplateBaseTest.testFindAllUsableTemplate" />
+        <item itemvalue="JUnit.TemplateBaseTest.testBuildTemplateInfo" />
+        <item itemvalue="JUnit.BuildTemplateTest.testBuildTemplate" />
+        <item itemvalue="JUnit.TemplateApplicationTests.contextLoad" />
       </list>
     </recent_temporary>
   </component>
@@ -139,7 +201,8 @@
       <option name="presentableId" value="Default" />
       <updated>1595965721432</updated>
       <workItem from="1595965724847" duration="15546000" />
-      <workItem from="1596491492362" duration="20792000" />
+      <workItem from="1596491492362" duration="23783000" />
+      <workItem from="1597261102910" duration="3737000" />
     </task>
     <servers />
   </component>
@@ -161,5 +224,21 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/ron-coupon-service/coupon-template/src/test/java/com/ron/coupon/service/BuildTemplateTest.java</url>
+          <line>65</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/ron-coupon-service/coupon-template/src/test/java/com/ron/coupon/service/BuildTemplateTest.java</url>
+          <line>32</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
