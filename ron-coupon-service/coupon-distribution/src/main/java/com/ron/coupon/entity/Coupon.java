@@ -55,7 +55,7 @@ public class Coupon {
     private CouponTemplateSDK templateSDK;
 
     /** Return an invalid coupon */
-    private static Coupon invalidCoupon(){
+    public static Coupon invalidCoupon(){
         Coupon coupon = new Coupon();
         coupon.setId(-1);
         return coupon;
