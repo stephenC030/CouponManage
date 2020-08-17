@@ -22,7 +22,7 @@ public class SettlementInfo {
     /** List of Coupon */
     private List<CouponAndTemplateInfo> couponAndTemplateInfos;
     /** true: Actually Use the coupon. False: just for calculating the final price
-     *  是否使结算生效，TRUE即核销, FALSE代表结算*/
+     *  是否使结算生效，TRUE即核销,即要实际使用该券 FALSE代表结算，即只是计算出如果用的话的最后价格*/
     private Boolean employ;
     /** The final result price of settlement */
     private Double cost;
