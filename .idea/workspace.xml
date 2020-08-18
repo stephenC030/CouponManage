@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3ae9bbb8-b5c8-4658-bd37-0d3ef4c25851" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ron-coupon-service/coupon-distribution/src/main/resources/sql/create_table.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ron-coupon-service/coupon-distribution/src/test/java/com/ron/coupon/DistributionApplicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ron-coupon-service/coupon-distribution/src/test/java/com/ron/coupon/service/UserServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ron-coupon-service/coupon-distribution/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ron-coupon-service/coupon-distribution/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ron-coupon-service/coupon-template/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ron-coupon-service/coupon-template/src/main/resources/application.yml" afterDir="false" />
-    </list> e4e8a230d294077e12caebf1fc72b0b585410b08
+    <list default="true" id="3ae9bbb8-b5c8-4658-bd37-0d3ef4c25851" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
