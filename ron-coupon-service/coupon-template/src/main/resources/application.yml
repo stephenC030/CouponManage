@@ -29,7 +29,7 @@ spring:
       connection-timeout: 30000
       max-lifetime: 45000
       auto-commit: true
-      pool-name: ImoocCouponHikariCP
+      pool-name: RonCouponHikariCP
   redis:
     database: 0
     host: 127.0.0.1
