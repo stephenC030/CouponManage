@@ -14,13 +14,16 @@ import com.ron.coupon.vo.*;
 
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.collections4.CollectionUtils;
+import org.apache.commons.collections4.MapUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.commons.lang3.tuple.Pair;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.stereotype.Service;
 
+import java.math.BigDecimal;
 import java.util.*;
+import java.util.function.Function;
 import java.util.stream.Collectors;
 
 /**
@@ -201,8 +204,82 @@ public class UserServiceImpl implements IUserService {
         return newCoupon;
     }
 
+    /**
+     * Settlement of Coupon 结算（核销）优惠券
+     * Rule related Process is handled by Settlement service 规则相关的处理由Settlement服务去做
+     * Only verification process is handled in current(Distribution) Service
+     * 当前服务仅仅做业务处理过程（校验过程）
+     * @param info {@link SettlementInfo}
+     * @return
+     * @throws CouponException
+     */
     @Override
     public SettlementInfo settlement(SettlementInfo info) throws CouponException {
-        return null;
+        // When no coupon, directly return original price
+        List<SettlementInfo.CouponAndTemplateInfo> ctInfos = info.getCouponAndTemplateInfos();
+        if(CollectionUtils.isEmpty(ctInfos)){
+            log.info("Empty coupons for settlement.");
+            double goodsSum = 0.0;
+            for (GoodsInfo goodsInfo : info.getGoodsInfos()) {
+                goodsSum += goodsInfo.getPrice() * goodsInfo.getCount();
+            }
+            // No coupon, don't have to set other attributes in SettlementInfo
+            info.setCost(retain2Decimals(goodsSum));
+        }
+
+        // Verify if the passed in Coupons belongs to user
+        List<Coupon> userCoupons = findCouponsByStatus(
+                info.getUserId(), CouponStatus.USABLE.getCode()
+        );
+        Map<Integer, Coupon> couponId2Coupon = userCoupons.stream()
+                .collect(Collectors.toMap(
+                        Coupon::getId,
+                        Function.identity()
+                ));
+        if(MapUtils.isEmpty(couponId2Coupon) || !CollectionUtils.isSubCollection(
+                ctInfos.stream().map(SettlementInfo.CouponAndTemplateInfo::getId)
+                .collect(Collectors.toList()), couponId2Coupon.keySet()
+        )){
+            log.info("Current user's coupon: {}", couponId2Coupon.keySet());
+            log.info("Passed in coupons: {}", ctInfos.stream().map(SettlementInfo.CouponAndTemplateInfo::getId)
+                    .collect(Collectors.toList()));
+            log.error("The passed in coupons not belong to current user!");
+            throw new CouponException("The passed in coupons not belong to current user!");
+        }
+        log.debug("The passed in coupons belongs to current user");
+        List<Coupon> settleCoupons = new ArrayList<>(ctInfos.size());
+        ctInfos.forEach(ci -> settleCoupons.add(couponId2Coupon.get(ci.getId())));
+
+        // TODO: Finish Settlement Service for computing the Rules
+        SettlementInfo processedInfo = settlementClient.computeRule(info).getData();
+        if(processedInfo.getEmploy() && CollectionUtils.isNotEmpty(processedInfo.getCouponAndTemplateInfos())){
+            log.info("Settlement User Coupon: userId: {}, settleCoupons: {}",
+                    info.getUserId(), JSON.toJSONString(settleCoupons));
+            /// Update Cache
+            redisService.addCouponToCache(
+                    info.getUserId(),
+                    settleCoupons,
+                    CouponStatus.USED.getCode()
+            );
+            /// Update DB
+            kafkaTemplate.send(
+                    Constant.TOPIC,
+                    JSON.toJSONString(new CouponKafkaMessage(
+                            CouponStatus.USED.getCode(),
+                            settleCoupons.stream().map(Coupon::getId).collect(Collectors.toList())
+                    ))
+            );
+        }
+
+        return processedInfo;
+    }
+
+    // Keep two digits after decimal point
+    private double retain2Decimals(double value){
+        // BigDecimal.ROUND_HALF_UP: 四舍五入
+        return new BigDecimal(value)
+                .setScale(2, BigDecimal.ROUND_HALF_UP)
+                .doubleValue();
+
     }
 }

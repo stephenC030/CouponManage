@@ -31,7 +31,7 @@ public class SettlementInfo {
     @Data
     @NoArgsConstructor
     @AllArgsConstructor
-    private static class CouponAndTemplateInfo{
+    public static class CouponAndTemplateInfo{
         /** Primary key for Coupon */
         private Integer id;
         /** Corresponding Template for coupon */

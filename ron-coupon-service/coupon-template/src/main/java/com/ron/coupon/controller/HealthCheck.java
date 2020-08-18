@@ -56,6 +56,7 @@ public class HealthCheck {
 
     /**
      * Get service meta-data from Eureka Server
+     * localhost:7001/coupon-template/info
      * @return
      */
     @GetMapping("/info")
