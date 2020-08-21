@@ -96,7 +96,7 @@ public class DiscountPlusPercentageExecutor extends AbstractExecutor implements 
         double PercentageQuota = (double) PercentageInfo.getTemplate().getRule().getDiscount().getQuota();
         finalPrice *= PercentageQuota * 1.0 / 100;
 
-        settlementInfo.setCost(finalPrice);
+        settlementInfo.setCost(retain2Decimals(finalPrice));
         settlementInfo.setCouponAndTemplateInfos(UsedCouponAndTemplateInfoList);
         log.debug("After trying to use Discount and Percentage Coupon, original Price: {}, final Price: {}",
                 originalTotalPrice, finalPrice);
