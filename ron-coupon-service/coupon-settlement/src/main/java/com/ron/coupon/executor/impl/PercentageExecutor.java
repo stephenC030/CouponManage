@@ -32,7 +32,7 @@ public class PercentageExecutor extends AbstractExecutor implements RuleExecutor
                 getCouponAndTemplateInfos().get(0).getTemplate();
         double quota = coupon.getRule().getDiscount().getQuota();
         double finalPrice = Math.max(originalTotalPrice * quota * 1.0 / 100, minCost());
-        settlementInfo.setCost(finalPrice);
+        settlementInfo.setCost(retain2Decimals(finalPrice));
         log.debug("Percentage Coupon Successfuly applies! original Price: {}, final Price: {}",
                 originalTotalPrice, settlementInfo.getCost());
 
