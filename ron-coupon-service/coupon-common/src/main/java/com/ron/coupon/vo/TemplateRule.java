@@ -55,6 +55,8 @@ public class TemplateRule {
 
     /**
      * Discount class. Depends on type of coupon. 折扣，与优惠券类型配合决定
+     * For quota variable, $quota off original price for Discount Coupon and Direct Deduct coupon
+     * %quota off for Percentage Coupon, so final price = original price * quota * 1.0 / 100.
      */
     @Data
     @AllArgsConstructor

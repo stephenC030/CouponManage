@@ -1,7 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3ae9bbb8-b5c8-4658-bd37-0d3ef4c25851" name="Default Changelist" comment="" />
+    <list default="true" id="3ae9bbb8-b5c8-4658-bd37-0d3ef4c25851" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/ron-coupon-service/coupon-settlement/coupon-settlement.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ron-coupon-service/coupon-settlement/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ron-coupon-service/coupon-settlement/src/main/java/com/ron/coupon/SettlementApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ron-coupon-service/coupon-settlement/src/main/java/com/ron/coupon/constant/RuleFlag.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ron-coupon-service/coupon-settlement/src/main/java/com/ron/coupon/controller/SettlementController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ron-coupon-service/coupon-settlement/src/main/java/com/ron/coupon/executor/AbstractExecutor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ron-coupon-service/coupon-settlement/src/main/java/com/ron/coupon/executor/ExecutorManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ron-coupon-service/coupon-settlement/src/main/java/com/ron/coupon/executor/RuleExecutor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ron-coupon-service/coupon-settlement/src/main/java/com/ron/coupon/executor/impl/DirectExecutor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ron-coupon-service/coupon-settlement/src/main/java/com/ron/coupon/executor/impl/DiscountPlusPercentageExecutor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ron-coupon-service/coupon-settlement/src/main/java/com/ron/coupon/executor/impl/PercentageExecutor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ron-coupon-service/coupon-settlement/src/main/java/com/ron/coupon/executor/impl/PriceOffExecutor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ron-coupon-service/coupon-settlement/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ron-coupon-service/coupon-common/src/main/java/com/ron/coupon/vo/TemplateRule.java" beforeDir="false" afterPath="$PROJECT_DIR$/ron-coupon-service/coupon-common/src/main/java/com/ron/coupon/vo/TemplateRule.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ron-coupon-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ron-coupon-service/pom.xml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +73,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Confirmation" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
