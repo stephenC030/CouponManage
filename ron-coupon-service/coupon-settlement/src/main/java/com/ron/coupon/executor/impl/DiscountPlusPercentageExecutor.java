@@ -63,7 +63,7 @@ public class DiscountPlusPercentageExecutor extends AbstractExecutor implements 
         SettlementInfo.CouponAndTemplateInfo DiscountInfo = null;
         SettlementInfo.CouponAndTemplateInfo PercentageInfo = null;
         for (SettlementInfo.CouponAndTemplateInfo ct : settlementInfo.getCouponAndTemplateInfos()) {
-            if(ct.getTemplate().getCategory() == CouponCategory.DEDUCT_X_OFF_Y.getCode()){
+            if(ct.getTemplate().getCategory().equals(CouponCategory.DEDUCT_X_OFF_Y.getCode())){
                 DiscountInfo = ct;
             }
             else{
@@ -94,9 +94,9 @@ public class DiscountPlusPercentageExecutor extends AbstractExecutor implements 
         }
         // Then calculate the price after using Percentage Coupon
         double PercentageQuota = (double) PercentageInfo.getTemplate().getRule().getDiscount().getQuota();
-        finalPrice *= PercentageQuota * 1.0 / 100;
+        finalPrice = retain2Decimals(finalPrice * PercentageQuota * 1.0 / 100);
 
-        settlementInfo.setCost(retain2Decimals(finalPrice));
+        settlementInfo.setCost(finalPrice);
         settlementInfo.setCouponAndTemplateInfos(UsedCouponAndTemplateInfoList);
         log.debug("After trying to use Discount and Percentage Coupon, original Price: {}, final Price: {}",
                 originalTotalPrice, finalPrice);

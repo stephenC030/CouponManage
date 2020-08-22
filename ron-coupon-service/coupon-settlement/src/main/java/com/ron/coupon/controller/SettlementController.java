@@ -23,7 +23,10 @@ public class SettlementController {
         this.executorManager = executorManager;
     }
 
-    /** Settlement compute interface */
+    /** Settlement compute interface
+     * localhost:7003/coupon-settlement/settlement/compute
+     * localhost:9000/ron-coupon/coupon-settlement/settlement/compute
+     * */
     @PostMapping("/settlement/compute")
     public SettlementInfo computeRule(@RequestBody  SettlementInfo settlementInfo)
             throws CouponException {

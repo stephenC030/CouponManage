@@ -2,16 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3ae9bbb8-b5c8-4658-bd37-0d3ef4c25851" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ron-coupon-service/coupon-settlement/src/test/java/com/ron/coupon/SettlementApplicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ron-coupon-service/coupon-settlement/src/test/java/com/ron/coupon/service/ExecutorManagerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/coupon-gateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/coupon-gateway/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ron-coupon-service/coupon-common/target/classes/com/ron/coupon/vo/TemplateRule$Discount.class" beforeDir="false" afterPath="$PROJECT_DIR$/ron-coupon-service/coupon-common/target/classes/com/ron/coupon/vo/TemplateRule$Discount.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ron-coupon-service/coupon-common/target/classes/com/ron/coupon/vo/TemplateRule$Usage.class" beforeDir="false" afterPath="$PROJECT_DIR$/ron-coupon-service/coupon-common/target/classes/com/ron/coupon/vo/TemplateRule$Usage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ron-coupon-service/coupon-settlement/coupon-settlement.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/coupon-eureka/src/main/java/com/ron/coupon/EurekaApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/coupon-eureka/src/main/java/com/ron/coupon/EurekaApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coupon-eureka/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/coupon-eureka/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coupon-eureka/target/classes/com/imooc/coupon/EurekaApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/coupon-gateway/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/coupon-gateway/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ron-coupon-service/coupon-settlement/src/main/java/com/ron/coupon/controller/SettlementController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ron-coupon-service/coupon-settlement/src/main/java/com/ron/coupon/controller/SettlementController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ron-coupon-service/coupon-settlement/src/main/java/com/ron/coupon/executor/impl/DiscountPlusPercentageExecutor.java" beforeDir="false" afterPath="$PROJECT_DIR$/ron-coupon-service/coupon-settlement/src/main/java/com/ron/coupon/executor/impl/DiscountPlusPercentageExecutor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ron-coupon-service/coupon-settlement/src/main/java/com/ron/coupon/executor/impl/PercentageExecutor.java" beforeDir="false" afterPath="$PROJECT_DIR$/ron-coupon-service/coupon-settlement/src/main/java/com/ron/coupon/executor/impl/PercentageExecutor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ron-coupon-service/coupon-settlement/target/classes/com/ron/coupon/controller/SettlementController.class" beforeDir="false" afterPath="$PROJECT_DIR$/ron-coupon-service/coupon-settlement/target/classes/com/ron/coupon/controller/SettlementController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ron-coupon-service/coupon-settlement/target/classes/com/ron/coupon/executor/impl/DiscountPlusPercentageExecutor.class" beforeDir="false" afterPath="$PROJECT_DIR$/ron-coupon-service/coupon-settlement/target/classes/com/ron/coupon/executor/impl/DiscountPlusPercentageExecutor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ron-coupon-service/coupon-template/src/main/java/com/ron/coupon/entity/CouponTemplate.java" beforeDir="false" afterPath="$PROJECT_DIR$/ron-coupon-service/coupon-template/src/main/java/com/ron/coupon/entity/CouponTemplate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ron-coupon-service/coupon-template/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ron-coupon-service/coupon-template/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ron-coupon-service/coupon-template/target/classes/com/ron/coupon/controller/HealthCheck.class" beforeDir="false" afterPath="$PROJECT_DIR$/ron-coupon-service/coupon-template/target/classes/com/ron/coupon/controller/HealthCheck.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ron-coupon-service/coupon-template/target/classes/com/ron/coupon/entity/CouponTemplate.class" beforeDir="false" afterPath="$PROJECT_DIR$/ron-coupon-service/coupon-template/target/classes/com/ron/coupon/entity/CouponTemplate.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -59,7 +62,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/ron-coupon-service/coupon-settlement/src" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -84,18 +87,18 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ExecutorManagerTest.testComputeRule">
-    <configuration name="DistributionApplicationTests.contextLoad" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="coupon-distribution" />
+  <component name="RunManager" selected="Spring Boot.SettlementApplication">
+    <configuration name="BuildTemplateTest.testBuildTemplate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="coupon-template" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.ron.coupon.*" />
+          <option name="PATTERN" value="com.ron.coupon.service.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.ron.coupon" />
-      <option name="MAIN_CLASS_NAME" value="com.ron.coupon.DistributionApplicationTests" />
-      <option name="METHOD_NAME" value="contextLoad" />
+      <option name="PACKAGE_NAME" value="com.ron.coupon.service" />
+      <option name="MAIN_CLASS_NAME" value="com.ron.coupon.service.BuildTemplateTest" />
+      <option name="METHOD_NAME" value="testBuildTemplate" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -202,11 +205,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.BuildTemplateTest.testBuildTemplate" />
         <item itemvalue="JUnit.ExecutorManagerTest.testComputeRule" />
         <item itemvalue="JUnit.SettlementApplicationTests.contextLoad" />
         <item itemvalue="JUnit.UserServiceTest.testFindAvailableTemplate" />
         <item itemvalue="JUnit.UserServiceTest.testFindCouponsByStatus" />
-        <item itemvalue="JUnit.DistributionApplicationTests.contextLoad" />
       </list>
     </recent_temporary>
   </component>
@@ -225,6 +228,7 @@
       <workItem from="1597261102910" duration="3737000" />
       <workItem from="1597295141748" duration="19056000" />
       <workItem from="1598029335634" duration="4693000" />
+      <workItem from="1598046777390" duration="8864000" />
     </task>
     <servers />
   </component>
@@ -260,7 +264,52 @@
           <line>32</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/ron-coupon-service/coupon-template/src/test/java/com/ron/coupon/service/BuildTemplateTest.java</url>
+          <line>34</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/ron-coupon-service/coupon-settlement/src/main/java/com/ron/coupon/executor/impl/DiscountPlusPercentageExecutor.java</url>
+          <line>110</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/ron-coupon-service/coupon-settlement/src/main/java/com/ron/coupon/executor/impl/DiscountPlusPercentageExecutor.java</url>
+          <line>112</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/ron-coupon-service/coupon-settlement/src/main/java/com/ron/coupon/executor/impl/DiscountPlusPercentageExecutor.java</url>
+          <line>36</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/ron-coupon-service/coupon-settlement/src/main/java/com/ron/coupon/executor/impl/DiscountPlusPercentageExecutor.java</url>
+          <line>55</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/ron-coupon-service/coupon-settlement/src/main/java/com/ron/coupon/executor/impl/DiscountPlusPercentageExecutor.java</url>
+          <line>72</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/ron-coupon-service/coupon-settlement/src/main/java/com/ron/coupon/executor/impl/DiscountPlusPercentageExecutor.java</url>
+          <line>77</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/ron-coupon-service/coupon-settlement/src/main/java/com/ron/coupon/executor/impl/DiscountPlusPercentageExecutor.java</url>
+          <line>64</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="SpringBootApplicationConfigurationType">
+        <watch expression="CouponCategory.DEDUCT_X_OFF_Y.getCode()" language="JAVA" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>
